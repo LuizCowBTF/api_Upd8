@@ -1,0 +1,92 @@
+<div class="container">
+  <h4>Consulta Cliente</h4>
+  <form>
+    <div class="row">
+      <div class="col-3">
+        <label for="cpf" class="form-label">CPF: </label>
+        <div class="input-group input-group-sm" id="inputs">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="000.000.000-00"
+            aria-label="Número de CPF"
+            name="cpf"
+            [(ngModel)]="cliente.cpf"
+          >
+        </div>
+      </div>
+      <div class="col-6">
+        <label for="nome" class="form-label">Nome: </label>
+        <div class="input-group input-group-sm" id="inputs">
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Nome completo"
+            name="nome"
+            [(ngModel)]="cliente.nome"
+          >
+        </div>
+      </div>
+      <div class="col-3">
+        <label for="nascimento" class="form-label">Nascimento: </label>
+        <div class="input-group input-group-lg">
+          <input type="date" name="date">
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-3">
+        <label for="sexo" class="form-label">Sexo: </label>
+        <br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="sexo1" value="masculino">
+            <label class="form-check-label" for="Masculino">Masculino</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="sexo2" value="feminino">
+            <label class="form-check-label" for="Feminino">Feminino</label>
+          </div>
+      </div>
+      <div class="col-5">
+        <label for="cidade" class="form-label">Cidade: </label>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Cidade"
+          name="cidade"
+          [(ngModel)]="cliente.cidade"
+        >
+      </div>
+      <div class="col-4">
+        <label for="estado" class="form-label">Estado: </label>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Estado"
+          name="estado"
+          [(ngModel)]="cliente.estado"
+        >
+      </div>
+      <br>
+      <div class="row mt-5">
+        <div class="col-4"></div>
+        <div class="col-2">
+          <button type="button" class="btn btn-primary">SALVAR</button>
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn-warning">LIMPAR</button>
+        </div>
+        <div class="col-4"></div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+  $(function(){
+    $('#datepicker').datepicker();
+  });
+</script>
+
+

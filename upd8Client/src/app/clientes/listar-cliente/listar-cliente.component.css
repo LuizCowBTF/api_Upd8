@@ -1,0 +1,21 @@
+.container {
+  margin: 30px auto;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+h4 {
+  color: #3395ff;
+  font-size: 14px;
+  text-align: center;
+}
+
+th {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+td {
+  font-size: 12px;
+}

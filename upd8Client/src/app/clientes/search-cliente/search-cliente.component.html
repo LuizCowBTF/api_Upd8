@@ -1,0 +1,128 @@
+<div class="container">
+  <h4>Consulta direta cliente</h4>
+  <form (ngSubmit)="submit()" [formGroup]="searchForm" #formDir="ngForm">
+    <div class="row">
+      <div class="col-3">
+        <label for="cpf" class="form-label">CPF: </label>
+        <div class="input-group input-group-sm" id="inputs">
+          <input
+            type="text"
+            class="form-control"
+            formControlName="cpf"
+            placeholder="000.000.000-00"
+            aria-label="Número de CPF"
+            name="cpf"
+            [(ngModel)]="cliente.cpf"
+            required
+          >
+          <div *ngIF="cpf.invalid && formDir.submitted" class="validation-error">
+            <p *ngIf="cpf.errors?.['required']">CPF obrigatório!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <label for="nome" class="form-label">Nome: </label>
+        <div class="input-group input-group-sm" id="inputs">
+          <input
+            type="text"
+            class="form-control"
+            formControlName="nome"
+            aria-label="Nome completo"
+            name="nome"
+            [(ngModel)]="cliente.nome"
+            required
+          >
+          <div *ngIF="nome.invalid && formDir.submitted" class="validation-error">
+            <p *ngIf="nome.errors?.['required']">Nome é obrigatório!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <label for="nascimento" class="form-label">Nascimento: </label>
+        <div class="input-group input-group-lg">
+          <input type="date" name="date">
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-4">
+        <label for="sexo" class="form-label">Sexo: </label>
+        <br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="sexo1" value="masculino">
+            <label class="form-check-label" for="Masculino">Masculino</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="sexo2" value="feminino">
+            <label class="form-check-label" for="Feminino">Feminino</label>
+          </div>
+      </div>
+      <div class="col-8">
+        <label for="endereco" class="form-label">Endereço: </label>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="endereco"
+          aria-label="Endereco"
+          name="endereco"
+          [(ngModel)]="cliente.estado"
+        >
+        <div *ngIF="estado.invalid && formDir.submitted" class="validation-error">
+          <p *ngIf="estado.errors?.['required']">Nome é obrigatório!</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-7">
+        <label for="cidade" class="form-label">Cidade: </label>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="cidade"
+          aria-label="Cidade"
+          name="cidade"
+          [(ngModel)]="cliente.cidade"
+        >
+        <div *ngIF="cidade.invalid && formDir.submitted" class="validation-error">
+          <p *ngIf="cidade.errors?.['required']">Cidade é obrigatório!</p>
+        </div>
+      </div>
+      <div class="col-5">
+        <label for="estado" class="form-label">Estado: </label>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="estado"
+          aria-label="Estado"
+          name="estado"
+          [(ngModel)]="cliente.estado"
+        >
+        <div *ngIF="estado.invalid && formDir.submitted" class="validation-error">
+          <p *ngIf="estado.errors?.['required']">Nome é obrigatório!</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row mt-5">
+      <div class="col-3"></div>
+      <div class="col-2">
+        <button type="button" class="btn btn-primary">PESQUISAR</button>
+      </div>
+      <div class="col-2"></div>
+      <div class="col-2">
+        <button type="button" class="btn btn-warning">LIMPAR</button>
+      </div>
+      <div class="col-3"></div>
+    </div>
+  </form>
+</div>
+
+<script>
+  $(function(){
+    $('#datepicker').datepicker();
+  });
+</script>
+
+

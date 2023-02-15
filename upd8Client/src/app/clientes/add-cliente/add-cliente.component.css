@@ -1,0 +1,26 @@
+h4 {
+  color: #3395ff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.input-group-append {
+  cursor: pointer;
+}
+
+.container {
+  margin: 30px auto;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+#inputs {
+  border-radius: 20px;
+}
+
+.sexo {
+  border: 1px solid #000000;
+  border-radius: 20px;
+
+}
