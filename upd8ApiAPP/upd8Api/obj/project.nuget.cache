@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jpYLLFQT74yCzSQfD5YH+/BmjwTakOAWd6y8eFQZMyRBXZRuLr4KwxOiyj8xkwzLLZMv6a/Zp1JSS5KHUSE15w==",
+  "dgSpecHash": "D/tuLi3tmqFhpRJdVnsnh97w7uXR3AX/YPN50kNzKl/NupMnvb6ZpnD8xuvyhS90ZTYzfqAVQOtbLTkaudqIgA==",
   "success": true,
-  "projectFilePath": "D:\\workspace\\api_Upd8\\upd8ApiAPP\\upd8Api\\upd8Api.csproj",
+  "projectFilePath": "E:\\Particular\\CONHECIMENTO\\TEMP\\api_Upd8\\upd8ApiAPP\\upd8Api\\upd8Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luizc\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\luizc\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

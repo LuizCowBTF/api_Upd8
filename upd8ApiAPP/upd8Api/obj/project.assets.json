@@ -10238,11 +10238,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\workspace\\api_Upd8\\upd8ApiAPP\\upd8Api\\upd8Api.csproj",
+      "projectUniqueName": "E:\\Particular\\CONHECIMENTO\\TEMP\\api_Upd8\\upd8ApiAPP\\upd8Api\\upd8Api.csproj",
       "projectName": "upd8Api",
-      "projectPath": "D:\\workspace\\api_Upd8\\upd8ApiAPP\\upd8Api\\upd8Api.csproj",
+      "projectPath": "E:\\Particular\\CONHECIMENTO\\TEMP\\api_Upd8\\upd8ApiAPP\\upd8Api\\upd8Api.csproj",
       "packagesPath": "C:\\Users\\luizc\\.nuget\\packages\\",
-      "outputPath": "D:\\workspace\\api_Upd8\\upd8ApiAPP\\upd8Api\\obj\\",
+      "outputPath": "E:\\Particular\\CONHECIMENTO\\TEMP\\api_Upd8\\upd8ApiAPP\\upd8Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -10324,7 +10324,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
